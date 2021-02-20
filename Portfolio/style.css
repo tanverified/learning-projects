@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar ul{
+  list-style: none;
+  background: #425df5;
+  overflow: hidden;
+}
+.navbar ul li{
+  float: left;
+  margin: 10px;
+}
+.navbar ul li a, .drpbtn{
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+.navbar ul li a:hover{
+  background-color: #5192ed;
+  color: #fff;
+}
+.dropdown li{
+  display: inline:block;
+}
+.drpmenu{
+  display: none;
+  position: absolute;
+  background-color: #425df5 ;
+  max-width: 160px;
+  box-shadow: 12px 8px 12px grey;
+  z-index: 1;
+}
+.drpmenu a{
+  display: block;
+  color: black;
+  padding: 4px 12px;
+  text-align: center;
+}
+.dropdown:hover .drpmenu{
+  display: block;
+}
